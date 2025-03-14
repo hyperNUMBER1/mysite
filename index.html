@@ -9,7 +9,7 @@
     <style>
         /* Navbar Transparente */
         .navbar {
-            background-color: rgba(255, 255, 255, 0); /* Transparente */
+            background-color: rgba(255, 255, 255, 1); /* Transparente */
             transition: background-color 0.3s ease;
         }
         .navbar:hover {
@@ -28,6 +28,15 @@
             height: 80vh;
             object-fit: cover;
         }
+        
+        .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
     </style>
 </head>
 <body>
@@ -50,30 +59,30 @@
     </div>
 </div>
     <style>
-            .pesquisa {
-    max-width: 500px;
-    margin: auto auto;
-    }
+        .pesquisa {
+            max-width: 500px;
+            margin: auto auto;
+        }
 
-.pesquisa .input-group {
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
+        .pesquisa .input-group {
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
 
-.pesquisa .form-control {
-    border: none;
-    padding-left: 20px;
-    }
+        .pesquisa .form-control {
+            border: none;
+            padding-left: 20px;
+        }
 
-.pesquisa .btn {
-    border: none;
-    padding: 10px 20px;
-    }
+        .pesquisa .btn {
+            border: none;
+            padding: 10px 20px;
+        }
 
-.pesquisa {
-    background-color: rgba(255, 255, 255, 0);
-}
+        .pesquisa {
+            background-color: rgba(255, 255, 255, 0);
+        }
     </style>
         </div>
         
@@ -195,12 +204,21 @@
               data-mdb-ripple-color="dark"
               ><i class="fab fa-instagram"></i
             ></a>
-          <!-- Section: Social media -->
+
+            <!-- Administrador -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="adm/index.php"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-house"></i>
+            </a>
+
         </div>      
         <!-- Copyright -->
         <div class="text-center text-dark p-3" style="background-color: rgba(255, 253, 253, 0.2);">
           © 2025 Copyright:
-          <a class="text-dark">ÊTO GALLERY</a>
+          <a class="text-dark"><strong>ÊTO GALLERY</strong></a>
         </div>
       </footer>   
       </div>
